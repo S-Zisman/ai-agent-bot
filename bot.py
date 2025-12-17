@@ -1,5 +1,6 @@
 import os
 import logging
+from dotenv import load_dotenv
 from telegram import Update, InlineKeyboardButton, InlineKeyboardMarkup
 from telegram.ext import (
     Application,
@@ -8,6 +9,9 @@ from telegram.ext import (
     ContextTypes,
 )
 from telegram.constants import ParseMode
+
+# Загружаем переменные окружения из .env файла
+load_dotenv()
 
 # Настройка логирования
 logging.basicConfig(
