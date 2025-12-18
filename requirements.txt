@@ -1,2 +1,5 @@
-python-telegram-bot==22.5
+python-telegram-bot[job-queue]==22.5
 python-dotenv==1.0.0
+anthropic>=0.40.0
+pytz
+APScheduler==3.10.4
